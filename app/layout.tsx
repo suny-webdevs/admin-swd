@@ -35,7 +35,9 @@ export default function RootLayout({
       lang="en"
       suppressHydrationWarning
     >
-      <body className={`${lato.variable} ${geistMono.variable} antialiased`}>
+      <body
+        className={`${lato.variable} ${geistMono.variable} antialiased bg-sidebar`}
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -44,7 +46,7 @@ export default function RootLayout({
         >
           <SidebarProvider>
             <AppSidebar />
-            <main className="rounded-md shadow-md m-2 w-full min-h-screen">
+            <main className="rounded-md shadow-md m-2 w-full min-h-screen bg-muted">
               <div className="rounded-t-md border-b border-sidebar-border px-5 py-3 flex items-center justify-between">
                 <div className="h-5 flex items-center space-x-4">
                   <SidebarTrigger />
