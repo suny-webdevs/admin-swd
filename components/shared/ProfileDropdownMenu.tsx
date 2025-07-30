@@ -8,6 +8,7 @@ import {
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar"
 import { ChevronsUpDown, LogOut } from "lucide-react"
 import Link from "next/link"
+import { ADMIN_PHOTO_URL } from "@/constant"
 
 const ProfileDropdownMenu = () => {
   return (
@@ -17,7 +18,7 @@ const ProfileDropdownMenu = () => {
           <div className="flex items-center gap-3">
             <Avatar className="rounded-lg">
               <AvatarImage
-                src={"https://i.ibb.co/tbF3s2v/my-photo.jpg"}
+                src={ADMIN_PHOTO_URL}
                 alt="Admin-SWD"
               />
               <AvatarFallback>SWD</AvatarFallback>
@@ -41,7 +42,7 @@ const ProfileDropdownMenu = () => {
           >
             <Avatar className="rounded-lg">
               <AvatarImage
-                src={"https://i.ibb.co/tbF3s2v/my-photo.jpg"}
+                src={ADMIN_PHOTO_URL}
                 alt="Admin-SWD"
               />
               <AvatarFallback>SWD</AvatarFallback>

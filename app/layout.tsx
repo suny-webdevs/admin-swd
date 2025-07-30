@@ -46,7 +46,7 @@ export default function RootLayout({
         >
           <SidebarProvider>
             <AppSidebar />
-            <main className="rounded-md shadow-md m-2 w-full min-h-screen bg-muted">
+            <main className="rounded-md shadow-md my-3 mr-3 w-full min-h-screen bg-muted">
               <div className="rounded-t-md border-b border-sidebar-border px-5 py-3 flex items-center justify-between">
                 <div className="h-5 flex items-center space-x-4">
                   <SidebarTrigger />
