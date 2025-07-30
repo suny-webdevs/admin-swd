@@ -12,7 +12,7 @@ import Link from "next/link"
 const ProfilePage = () => {
   return (
     <div className="container mx-auto">
-      <ScrollArea className="h-screen w-full">
+      <ScrollArea className="h-[49rem] w-full">
         <Card>
           <CardHeader className="relative flex items-end gap-5">
             <div className="absolute top-0 right-6">
