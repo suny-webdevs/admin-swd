@@ -32,8 +32,8 @@ const ProfileDropdownMenu = () => {
         </div>
       </DropdownMenuTrigger>
       <DropdownMenuContent
-        side="right"
-        align="end"
+        side="top"
+        align="center"
       >
         <DropdownMenuItem>
           <Link

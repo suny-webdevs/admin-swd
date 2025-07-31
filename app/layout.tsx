@@ -7,6 +7,7 @@ import { ThemeProvider } from "@/providers/ThemeProvider"
 import { ModeToggle } from "@/components/shared/ModeToggle"
 import { Separator } from "@/components/ui/separator"
 import DynamicBreadcrumb from "@/components/shared/DynamicBreadcrumb"
+import { ScrollArea } from "@/components/ui/scroll-area"
 
 const lato = Lato({
   variable: "--font-lato",
@@ -46,8 +47,8 @@ export default function RootLayout({
         >
           <SidebarProvider>
             <AppSidebar />
-            <main className="rounded-md shadow-md my-3 mr-3 w-full min-h-screen bg-muted">
-              <div className="rounded-t-md border-b border-sidebar-border px-5 py-3 flex items-center justify-between">
+            <main className="w-full max-h-screen bg-muted shadow-2xl">
+              <div className="border-b border-sidebar-border px-5 py-3 flex items-center justify-between">
                 <div className="h-5 flex items-center space-x-4">
                   <SidebarTrigger />
                   <Separator orientation="vertical" />
@@ -55,7 +56,11 @@ export default function RootLayout({
                 </div>
                 <ModeToggle />
               </div>
-              <div className="p-5">{children}</div>
+              <div className="container mx-auto p-5">
+                <ScrollArea className="h-[49rem] w-full rounded-xl">
+                  {children}
+                </ScrollArea>
+              </div>
             </main>
           </SidebarProvider>
         </ThemeProvider>
