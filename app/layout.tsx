@@ -48,8 +48,8 @@ export default function RootLayout({
         >
           <SidebarProvider>
             <AppSidebar />
-            <main className="w-full max-h-screen bg-muted shadow-2xl">
-              <div className="border-b border-sidebar-border px-5 py-3 flex items-center justify-between">
+            <main className="w-full max-h-screen bg-card">
+              <div className="border-b px-5 py-3 flex items-center justify-between">
                 <div className="h-5 flex items-center space-x-4">
                   <SidebarTrigger />
                   <Separator orientation="vertical" />
@@ -57,8 +57,8 @@ export default function RootLayout({
                 </div>
                 <ModeToggle />
               </div>
-              <div className="container mx-auto p-5">
-                <ScrollArea className="h-[49rem] w-full border-2 rounded p-5 scroll-auto">
+              <div className="container mx-auto pt-3">
+                <ScrollArea className="h-[51rem] w-full rounded scroll-auto">
                   {children}
                   <Toaster />
                 </ScrollArea>
