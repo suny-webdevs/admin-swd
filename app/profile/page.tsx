@@ -15,13 +15,15 @@ const ProfilePage = () => {
         <div className="absolute top-0 right-6">
           <Tooltip>
             <TooltipTrigger asChild>
-              <Button
-                variant={"outline"}
-                size={"icon"}
-                className="cursor-pointer"
-              >
-                <Pencil />
-              </Button>
+              <Link href={"/profile/update-profile"}>
+                <Button
+                  variant={"outline"}
+                  size={"icon"}
+                  className="cursor-pointer"
+                >
+                  <Pencil />
+                </Button>
+              </Link>
             </TooltipTrigger>
             <TooltipContent>Update</TooltipContent>
           </Tooltip>
@@ -102,6 +104,18 @@ const ProfilePage = () => {
             <strong>Govt. P.C College, Bagerhat</strong>
             <p>BSS(Bachelor of Social Science) in Economics</p>
             <p>Session : 2020-21</p>
+          </span>
+        </div>
+
+        {/* Experiences */}
+        <div className="space-y-1">
+          <h1 className="text-2xl font-bold font-mono uppercase">
+            Experiences
+          </h1>
+          <span className="text-lg tracking-wide">
+            <strong>Company/Institute Name</strong>
+            <p>Company/Institute Role</p>
+            <p>Job Duration</p>
           </span>
         </div>
 

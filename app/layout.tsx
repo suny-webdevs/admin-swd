@@ -8,6 +8,7 @@ import { ModeToggle } from "@/components/shared/ModeToggle"
 import { Separator } from "@/components/ui/separator"
 import DynamicBreadcrumb from "@/components/shared/DynamicBreadcrumb"
 import { ScrollArea } from "@/components/ui/scroll-area"
+import { Toaster } from "@/components/ui/sonner"
 
 const lato = Lato({
   variable: "--font-lato",
@@ -57,8 +58,9 @@ export default function RootLayout({
                 <ModeToggle />
               </div>
               <div className="container mx-auto p-5">
-                <ScrollArea className="h-[49rem] w-full rounded-xl">
+                <ScrollArea className="h-[49rem] w-full border-2 rounded p-5 scroll-auto">
                   {children}
+                  <Toaster />
                 </ScrollArea>
               </div>
             </main>
