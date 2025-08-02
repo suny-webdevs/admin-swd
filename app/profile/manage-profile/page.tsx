@@ -1,9 +1,9 @@
-import UpdateProfile from "@/components/layout/UpdateProfile"
+import ManageProfile from "@/components/layout/ManageProfile"
 
 const UpdateProfilePage = () => {
   return (
     <div>
-      <UpdateProfile />
+      <ManageProfile />
     </div>
   )
 }

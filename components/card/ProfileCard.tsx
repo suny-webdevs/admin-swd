@@ -1,7 +1,6 @@
 import Image from "next/image"
 import { Card, CardContent } from "../ui/card"
 import { ADMIN_PHOTO_URL } from "@/constant"
-import { Separator } from "../ui/separator"
 
 const ProfileCard = () => {
   return (
@@ -19,12 +18,9 @@ const ProfileCard = () => {
           <p className="text-lg">Full Stack Developer | MERN Stack</p>
 
           <div className="space-y-1.5">
-            <div className="flex flex-col lg:flex-row lg:items-center space-x-3 lg:h-4">
+            <div className="flex flex-col space-x-3">
               <p>Chitalmari, Bagerhat, Bangladesh</p>
-              <Separator orientation="vertical" />
               <p>+88 01923827037</p>
-              <Separator orientation="vertical" />
-              <p>mdsunyshaikh@gmail.com</p>
             </div>
           </div>
         </div>

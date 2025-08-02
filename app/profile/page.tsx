@@ -4,7 +4,7 @@ import { Separator } from "@/components/ui/separator"
 import { Tooltip, TooltipContent } from "@/components/ui/tooltip"
 import { ADMIN_PHOTO_URL } from "@/constant"
 import { TooltipTrigger } from "@radix-ui/react-tooltip"
-import { Pencil } from "lucide-react"
+import { UserCog } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -15,17 +15,17 @@ const ProfilePage = () => {
         <div className="absolute top-0 right-6">
           <Tooltip>
             <TooltipTrigger asChild>
-              <Link href={"/profile/update-profile"}>
+              <Link href={"/profile/manage-profile"}>
                 <Button
                   variant={"outline"}
                   size={"icon"}
                   className="cursor-pointer"
                 >
-                  <Pencil />
+                  <UserCog />
                 </Button>
               </Link>
             </TooltipTrigger>
-            <TooltipContent>Update</TooltipContent>
+            <TooltipContent>Manage profile</TooltipContent>
           </Tooltip>
         </div>
         <Image

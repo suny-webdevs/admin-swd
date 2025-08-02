@@ -12,8 +12,6 @@ const AddProfile = () => {
     image: "",
     name: "",
     devRole: "",
-    email: "",
-    password: "",
     phone: "",
     address: "",
   }
@@ -21,9 +19,9 @@ const AddProfile = () => {
   const onSubmit: SubmitHandler<FieldValues> = (data) => {
     toast("Profile data Submitted", {
       description: (
-        <div className="text-sm mt-2 whitespace-pre-wrap">
+        <pre className="text-sm mt-2 whitespace-pre-wrap">
           {JSON.stringify(data, null, 2)}
-        </div>
+        </pre>
       ),
     })
   }
@@ -32,7 +30,7 @@ const AddProfile = () => {
     <SWDForm
       onSubmit={onSubmit}
       defaultValues={defaultValues}
-      className="grid grid-cols-1 md:grid-cols-2 gap-3"
+      className="grid grid-cols-1 md:grid-cols-2 gap-4"
     >
       <SWDInput
         type="url"
@@ -49,18 +47,6 @@ const AddProfile = () => {
         name="devRole"
         label="Developer Role"
         placeholder="Enter developer role here"
-      />
-      <SWDInput
-        type="email"
-        name="email"
-        label="Email"
-        placeholder="Enter your email here"
-      />
-      <SWDInput
-        type="password"
-        name="password"
-        label="Password"
-        placeholder="Enter your password here"
       />
       <SWDInput
         name="phone"

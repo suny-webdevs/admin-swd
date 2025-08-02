@@ -46,7 +46,7 @@ const tabItems = [
   },
 ]
 
-const UpdateProfile = () => {
+const ManageProfile = () => {
   return (
     <Tabs defaultValue="profile">
       <div className="flex items-center justify-center">
@@ -75,4 +75,4 @@ const UpdateProfile = () => {
   )
 }
 
-export default UpdateProfile
+export default ManageProfile

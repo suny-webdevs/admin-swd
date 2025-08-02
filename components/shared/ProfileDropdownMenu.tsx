@@ -13,7 +13,7 @@ import { ADMIN_PHOTO_URL } from "@/constant"
 const ProfileDropdownMenu = () => {
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger className="hover:bg-secondary rounded-md">
+      <DropdownMenuTrigger className="hover:bg-sidebar-accent rounded-md">
         <div className="flex items-center justify-between cursor-pointer p-2">
           <div className="flex items-center gap-3">
             <Avatar className="rounded-lg">
@@ -52,6 +52,13 @@ const ProfileDropdownMenu = () => {
               <span className="text-sm">mdsunyshaikh@gmail.com</span>
             </div>
           </Link>
+        </DropdownMenuItem>
+        <DropdownMenuSeparator />
+        <DropdownMenuItem
+          asChild
+          className="cursor-pointer"
+        >
+          <Link href={"/account"}>Manage account</Link>
         </DropdownMenuItem>
         <DropdownMenuSeparator />
         <DropdownMenuItem className="cursor-pointer">
