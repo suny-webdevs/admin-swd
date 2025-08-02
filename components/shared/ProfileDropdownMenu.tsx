@@ -58,7 +58,7 @@ const ProfileDropdownMenu = () => {
           asChild
           className="cursor-pointer"
         >
-          <Link href={"/account"}>Manage account</Link>
+          <Link href={"/manage-account"}>Manage account</Link>
         </DropdownMenuItem>
         <DropdownMenuSeparator />
         <DropdownMenuItem className="cursor-pointer">

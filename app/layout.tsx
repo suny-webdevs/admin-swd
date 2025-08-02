@@ -57,7 +57,7 @@ export default function RootLayout({
                 </div>
                 <ModeToggle />
               </div>
-              <div className="container mx-auto pt-3">
+              <div className="container mx-auto px-2 py-3">
                 <ScrollArea className="h-[51rem] w-full rounded scroll-auto">
                   {children}
                   <Toaster />

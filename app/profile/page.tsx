@@ -11,7 +11,7 @@ import Link from "next/link"
 const ProfilePage = () => {
   return (
     <Card>
-      <CardHeader className="relative flex items-end gap-5">
+      <CardHeader className="relative flex flex-col lg:flex-row lg:items-end gap-5">
         <div className="absolute top-0 right-6">
           <Tooltip>
             <TooltipTrigger asChild>
@@ -33,14 +33,14 @@ const ProfilePage = () => {
           alt="ADMIN-SWD profile photo"
           width={200}
           height={200}
-          className="rounded-md object-cover hidden lg:block"
+          className="rounded-md object-cover"
         />
         <div>
-          <h1 className="text-5xl font-bold">Md Suny Shaikh</h1>
+          <h1 className="text-4xl lg:text-5xl font-bold">Md Suny Shaikh</h1>
           <p className="text-lg">Full Stack Developer | MERN Stack</p>
 
           <div className="space-y-1.5">
-            <div className="flex flex-col lg:flex-row lg:items-center space-x-3 lg:h-4">
+            <div className="flex flex-col xl:flex-row xl:items-center space-x-3 xl:h-4">
               <p>Chitalmari, Bagerhat, Bangladesh</p>
               <Separator orientation="vertical" />
               <p>+88 01923827037</p>
@@ -77,7 +77,7 @@ const ProfilePage = () => {
         {/* Biography */}
         <div className="space-y-1">
           <h1 className="text-2xl font-bold font-mono uppercase">Biography</h1>
-          <p className="text-lg tracking-wide">
+          <p className="text-base md:text-lg tracking-wide">
             Motivated and detail-oriented MERN Stack Developer with hands-on
             experience in designing, developing, and maintaining dynamic web
             applications. Skilled in building full-stack solutions using
@@ -90,7 +90,7 @@ const ProfilePage = () => {
         {/* Skills */}
         <div className="space-y-1">
           <h1 className="text-2xl font-bold font-mono uppercase">Skills</h1>
-          <p className="text-lg tracking-wide">
+          <p className="text-base md:text-lg tracking-wide">
             <strong>Technical skills : </strong> Tailwind CSS, JavaScript,
             TypeScript, Node.js, React.js, Redux.js, Next.js, Express.js,
             MongoDB, Mongoose, PostgreSQl, Prisma ORM, Git & GitHub
@@ -100,7 +100,7 @@ const ProfilePage = () => {
         {/* Education */}
         <div className="space-y-1">
           <h1 className="text-2xl font-bold font-mono uppercase">Education</h1>
-          <span className="text-lg tracking-wide">
+          <span className="text-base md:text-lg tracking-wide">
             <strong>Govt. P.C College, Bagerhat</strong>
             <p>BSS(Bachelor of Social Science) in Economics</p>
             <p>Session : 2020-21</p>
@@ -112,7 +112,7 @@ const ProfilePage = () => {
           <h1 className="text-2xl font-bold font-mono uppercase">
             Experiences
           </h1>
-          <span className="text-lg tracking-wide">
+          <span className="text-base md:text-lg tracking-wide">
             <strong>Company/Institute Name</strong>
             <p>Company/Institute Role</p>
             <p>Job Duration</p>
@@ -122,7 +122,7 @@ const ProfilePage = () => {
         {/* Services */}
         <div className="space-y-1">
           <h1 className="text-2xl font-bold font-mono uppercase">Services</h1>
-          <div className="text-lg tracking-wide">
+          <div className="text-base md:text-lg tracking-wide">
             <p>
               <strong>Front-End :</strong> Building intuitive, responsive, and
               user-friendly web interfaces with clean and efficient code.
@@ -144,7 +144,7 @@ const ProfilePage = () => {
             Certifications
           </h1>
           <div className="space-y-4">
-            <div className="text-lg tracking-wide">
+            <div className="text-base md:text-lg tracking-wide">
               <strong>Complete Web Development</strong>
               <p>From : Programming Hero</p>
               {/* <p>Duration : 6 months</p> */}
@@ -185,7 +185,7 @@ const ProfilePage = () => {
           <h1 className="text-2xl font-bold font-mono uppercase">
             Social links
           </h1>
-          <div className="text-lg tracking-wide">
+          <div className="text-base md:text-lg tracking-wide">
             <p>
               <strong>LinkedIn : </strong>
               <Link

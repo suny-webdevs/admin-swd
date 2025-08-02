@@ -59,14 +59,14 @@ const AddProfile = () => {
         placeholder="Enter your address here"
         className="md:col-span-2"
       />
-      <div>
-        <Button
-          type="submit"
-          className="cursor-pointer"
-        >
-          Save
-        </Button>
-      </div>
+
+      <Button
+        type="submit"
+        size={"lg"}
+        className="cursor-pointer md:col-span-2"
+      >
+        Save
+      </Button>
     </SWDForm>
   )
 }
